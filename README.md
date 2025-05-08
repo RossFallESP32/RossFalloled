@@ -47,3 +47,5 @@ GND GND
 Link Projetc
 https://app.cirkitdesigner.com/project/6b42841d-01df-4a47-88ff-2cdbf93b908e
 
+![circuit_image(4).png]()
+
