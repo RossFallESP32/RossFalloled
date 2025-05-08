@@ -7,9 +7,11 @@ Jammer-ESP32
 * 1 or 2 Nrf24l01 PA LNA
 * 14 Jummper wire female to female
 
-##Flash
+## Flash
 
-RossFalloled   0x0
+Web Flasher https://espressif.github.io/esptool-js/
+
+RossFalloled.bin   -----    0x0
  
  ## STEP 1 WIRING VIDEO INSTRUCTION
 
