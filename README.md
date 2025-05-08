@@ -44,8 +44,8 @@ GND GND
  *  VSPI CE = 22
 2. FOR SINGLE/ONE NRF24L01 YOU CAN CHOOSE BETWEEN HSPI OR VSPI
 
-Link Projetc
+##Link Projetc
 https://app.cirkitdesigner.com/project/6b42841d-01df-4a47-88ff-2cdbf93b908e
 
-![circuit_image(4).png]()
+![circuit_image(4).png](https://github.com/RossFallESP32/RossFalloled/blob/main/circuit_image%20(4).png)
 
