@@ -5,3 +5,16 @@ ESP32 Wroom , ESP32U
 Web Flash
 
 https://espressif.github.io/esptool-js/
+
+LED Pin setup
+
+constexpr int BUTTON_PIN = 34;
+constexpr int RED_PIN = 25;  // ขา LED สีแดง
+constexpr int GREEN_PIN = 26; // ขา LED สีเขียว
+constexpr int NUM_PIXELS = 1;
+constexpr int SPI_SPEED = 16000000;
+
+SPIClass *spiVSPI = nullptr;
+SPIClass *spiHSPI = nullptr;
+RF24 radioVSPI(22, 21, SPI_SPEED);
+RF24 radioHSPI(16, 15, SPI_SPEED);
