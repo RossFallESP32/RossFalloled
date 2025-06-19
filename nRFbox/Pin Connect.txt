@@ -1,0 +1,86 @@
+nrflogo
+
+SDA_PIN 21
+SCL_PIN 22
+Vcc_PIN 3.3v
+GND_PIN GND
+
+Radio1
+CE-5
+CS-17
+Radio2
+CE-16
+CS-4
+Radio3
+CE-15
+CS-2
+SCK = 18, MISO = 19, MOSI = 23
+UP-26
+Down-33
+Select-32
+
+nrfbox
+Oled Compact (1NRF)
+
+VCC	3.3V
+GND	GND
+SCL	GPIO 22
+SDA	GPIO 21
+Hspi
+VCC	3.3V	(+) capacitor
+GND	GND	(-) capacitor
+CE	GPIO 16	
+CSN	GPIO 15	
+SCK	GPIO 14	
+MOSI	GPIO 13	
+MISO	GPIO 12
+
+Button
+OK	GPIO 25
+NEXT (Optional)	GPIO 26
+PREVIOUS (Optional)	GPIO 27
+
+Oled Standard (2NRF)
+
+VCC	3.3V
+GND	GND
+SCL	GPIO 22
+SDA	GPIO 21
+
+HSPI
+VCC	3.3V	(+) capacitor
+GND	GND	(-) capacitor
+CE	GPIO 16	
+CSN	GPIO 15	
+SCK	GPIO 14	
+MOSI	GPIO 13	
+MISO	GPIO 12
+VSPI
+VCC	3.3V	(+) capacitor
+GND	GND	(-) capacitor
+CE	GPIO 22	
+CSN	GPIO 21	
+SCK	GPIO 18	
+MOSI	GPIO 23	
+MISO	GPIO 19
+
+withOut (No Oled)
+HSPI
+VCC	3.3V	(+) capacitor
+GND	GND	(-) capacitor
+CE	GPIO 16	
+CSN	GPIO 15	
+SCK	GPIO 14	
+MOSI	GPIO 13	
+MISO	GPIO 12
+VSPI
+VCC	3.3V	(+) capacitor
+GND	GND	(-) capacitor
+CE	GPIO 22	
+CSN	GPIO 21	
+SCK	GPIO 18	
+MOSI	GPIO 23	
+MISO	GPIO 19
+
+
+
