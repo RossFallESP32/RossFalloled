@@ -1,0 +1,21 @@
+RossFalloled
+
+OLED 
+SDA D21
+SCL D22
+Vcc 3.3v
+GND GND
+
+ HSPI=SCK = 14, MISO = 12, MOSI = 13, CS = 15 , CE = 26
+VSPI=SCK = 18, MISO =19, MOSI = 23 ,CS =2 ,CE = 4
+
+C3 mini
+
+OLED
+SDA D21
+SCL D22
+Vcc 3.3v
+GND GND
+
+HSPI= SCK = 4, MISO = 5, MOSI = 6, CS = 10 , CE = 7
+FSPI= SCK = 4, MISO = 5, MOSI = 6, CS = 21 , CE = 20
