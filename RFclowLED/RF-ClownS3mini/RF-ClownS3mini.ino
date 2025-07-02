@@ -1,3 +1,7 @@
+//# This file is based on code from RF-Clown by cifertech (https://github.com/cifertech/RF-Clown)
+//# Original license: see LICENSE-CIFERTECH
+//# Modifications copyright (c) 2025 RossFallESP32
+
 #include "RF24.h"
 #include <SPI.h>
 #include <ezButton.h>
@@ -6,8 +10,8 @@
 #include "esp_wifi.h"
 
 constexpr int BUTTON_PIN = 3;
-constexpr int RED_PIN = 2;  // ขา LED สีแดง
-constexpr int GREEN_PIN = 1; // ขา LED สีเขียว
+constexpr int RED_PIN = 2;  // pin LED Red
+constexpr int GREEN_PIN = 1; // pin LED Green
 constexpr int NUM_PIXELS = 1;
 
 SPIClass hspi(HSPI);
@@ -42,11 +46,12 @@ void setup() {
     
     modeButton.setDebounceTime(100);
 
-    // กำหนดขา LED เป็น OUTPUT
+    // set LED Pin as OUTPUT
     pinMode(RED_PIN, OUTPUT);
     pinMode(GREEN_PIN, OUTPUT);
 
-    // ปิด LED ทั้งสองสีเมื่อเริ่มต้น
+    //  Turn off both LED colors at startup.
+
     digitalWrite(RED_PIN, LOW);
     digitalWrite(GREEN_PIN, LOW);
     
@@ -112,12 +117,12 @@ void handleModeChange() {
     currentMode = (currentMode + 1) % 4;
     Serial.print("Mode changed to: ");
     Serial.println(currentMode);
-    updateBiColorLED(); // เปลี่ยนจาก updateNeoPixel() เป็น updateBiColorLED()
+    updateBiColorLED(); // Changed from updateNeoPixel to updateBiColorLED
 }
 
 
-//constexpr int RED_PIN = 4;  // ขา LED สีแดง
-//constexpr int GREEN_PIN = 5; // ขา LED สีเขียว
+//constexpr int RED_PIN = 4;  // pin LED Red
+//constexpr int GREEN_PIN = 5; // pin LED Green
 
 void updateBiColorLED() {
     switch (currentMode) {
@@ -126,16 +131,16 @@ void updateBiColorLED() {
             digitalWrite(GREEN_PIN, LOW);
             break;
         case 1:
-            digitalWrite(RED_PIN, HIGH); // เปิดสีแดง
+            digitalWrite(RED_PIN, HIGH); // open Red
             digitalWrite(GREEN_PIN, LOW);
             break;
         case 2:
             digitalWrite(RED_PIN, LOW);
-            digitalWrite(GREEN_PIN, HIGH); // เปิดสีเขียว
+            digitalWrite(GREEN_PIN, HIGH); // open Green
             break;
         case 3:
             digitalWrite(RED_PIN, HIGH);
-            digitalWrite(GREEN_PIN, HIGH); // เปิดทั้งสองสี
+            digitalWrite(GREEN_PIN, HIGH); // Open both colors
             break;
     }
 }
