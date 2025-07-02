@@ -57,3 +57,6 @@ https://app.cirkitdesigner.com/project/6b42841d-01df-4a47-88ff-2cdbf93b908e
 
 - CiferTech https://github.com/cifertech/nRFBox
 
+- Smoochiee
+https://github.com/smoochiee/Noisy-boy-esp32-Bluetooth-jammer
+
